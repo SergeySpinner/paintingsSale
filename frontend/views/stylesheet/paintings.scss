@@ -1,0 +1,64 @@
+$border-color: black;
+$obsidian: #5b4965;
+
+html {
+  background-image: url(images/back.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.images {
+  button {
+    &:active {
+      background: $obsidian;
+    }
+    background: #786288;
+    border: solid 2px black;
+    border-radius: 2px;
+    font-size: 35px;
+  }
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.image-block {
+  border: solid black 8px;
+  border-radius: 17px;
+  margin: 10px 25px 10px 25px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: #ccccff;
+  box-shadow: inset 0px -70px 100px 100px #5b4965;
+  align-items: center;
+
+  img {
+    position: relative;
+    width: auto;
+    border: solid black 5px;
+    border-radius: 10px;
+  }
+}
+
+
+p {
+  font-family: serif;
+  font-size: 30px;
+}
+
+body {
+  button {
+    &:active {
+      background: $obsidian;
+    }
+    background: #786288;
+    border: solid 2px black;
+    border-radius: 2px;
+    font-size: 35px;
+  }
+}

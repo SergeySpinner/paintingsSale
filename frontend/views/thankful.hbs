@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Thankful for buying</title>
+    <link rel="stylesheet" href="./stylesheet/thankful.css">
+</head>
+<body>
+<div class="painting">
+    <div class="congrats">
+        <h1>Congratulations, you bought the painting</h1>
+    </div>
+
+    <div class="painting-img">
+        <img src="{{painting.primaryImageSmall}}" alt="{{painting.title}}">
+    </div>
+
+    <div class="painting-info">
+        <p><b>Artist:</b> <span><a href="{{constituents.constituentWikidata_URL}}" target="_blank">{{constituents.name}}</a></span></p>
+        <p><b>Information about an artist:</b> <span>{{painting.artistDisplayBio}}</span></p>
+        <p><b>Materials:</b> <span>{{painting.medium}}</span></p>
+        <p><b>The time of painting:</b> <span>{{painting.objectBeginDate}}-{{painting.objectEndDate}} years</span></p>
+        <p><b>Additional information:</b> <span>{{painting.creditLine}}</span></p>
+    </div>
+    <div class="return">
+        <a href="/gallery">Continue auction</a>
+    </div>
+</div>
+</body>
+</html>

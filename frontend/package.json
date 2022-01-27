@@ -1,0 +1,32 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "start http://localhost:5000/gallery & nodemon app.js",
+    "dev_frontend": "start http://localhost:5000/gallery & nodemon main.633b7ac42b0d532d7e3b.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "hbs": "^4.1.2",
+    "requirejs": "^2.3.6",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1",
+    "xmlhttprequest": "^1.8.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "css-loader": "^6.5.1",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "node-sass": "^6.0.1",
+    "nodemon": "^2.0.15",
+    "sass-loader": "^12.3.0",
+    "style-loader": "^3.3.1"
+  }
+}
